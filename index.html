@@ -18,18 +18,18 @@
       font-weight: 500;
       margin-bottom: 0;
     }
-    p {
+    p.xin {
       font-size: 1.6em;
       font-weight: 300;
       line-height: 1.4;
       max-width: 26em;
     }
-    a {
+    a.link {
       text-decoration: none;
       color: #121314;
       position: relative;
     }
-    a:after {
+    a.link:after {
       content: "";
       position: absolute;
       z-index: -1;
@@ -40,17 +40,23 @@
       transition: top 200ms cubic-bezier(0, .8, .13, 1);
       background-color: rgba(79,192,141,0.5);
     }
-    a:hover:after {
+    a.link:hover:after {
       top: 0%;
     }
   </style>
 </head>
 <body>
   <h1>你好</h1>
-  <p>我是伍鑫</p>
-  <p>
+  <p class="xin">我是伍鑫</p>
+  <p class="xin">
     我是来自广东工业大学计算机学院的学生，这是我的
-    <a href="http://github.com/hellowuxin" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="link" href="http://github.com/hellowuxin" target="_blank" rel="noopener noreferrer">GitHub</a>
   </p>
+  <div style="width:300px;margin:0 auto; padding:20px 0;position: absolute;bottom: 0;">
+    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44090202000405" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+      <img src="备案图标.png" style="float:left;"/>
+      <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44090202000405号</p>
+    </a>
+  </div>
 </body>
 </html>
